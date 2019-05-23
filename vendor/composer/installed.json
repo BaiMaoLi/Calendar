@@ -1,0 +1,314 @@
+[
+    {
+        "name": "dioscouri/f3-admin",
+        "version": "v0.9.0",
+        "version_normalized": "0.9.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dioscouri/f3-admin.git",
+            "reference": "6bf5c143c8fa48654903b43ce733e591c27d66c2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dioscouri/f3-admin/zipball/6bf5c143c8fa48654903b43ce733e591c27d66c2",
+            "reference": "6bf5c143c8fa48654903b43ce733e591c27d66c2",
+            "shasum": ""
+        },
+        "require": {
+            "dioscouri/f3-lib": ">=v0.8",
+            "dioscouri/f3-users": ">=v0.8",
+            "php": ">=5.4.0"
+        },
+        "time": "2015-09-01T21:28:07+00:00",
+        "type": "component",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Admin": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL"
+        ],
+        "authors": [
+            {
+                "name": "Rafael Diaz-Tushman",
+                "email": "rdiaztushman@dioscouri.com",
+                "homepage": "http://dioscouri.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "Admin component for the F3-framework",
+        "homepage": "https://github.com/dioscouri/f3-admin",
+        "keywords": [
+            "F3",
+            "admin",
+            "cms",
+            "rad"
+        ]
+    },
+    {
+        "name": "dioscouri/f3-lib",
+        "version": "v0.9.0",
+        "version_normalized": "0.9.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dioscouri/f3-lib.git",
+            "reference": "2657c248adebd6e75143fb3f34b3d8500dbaba71"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dioscouri/f3-lib/zipball/2657c248adebd6e75143fb3f34b3d8500dbaba71",
+            "reference": "2657c248adebd6e75143fb3f34b3d8500dbaba71",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "time": "2015-09-01T21:40:13+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Dsc": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL"
+        ],
+        "authors": [
+            {
+                "name": "Rafael Diaz-Tushman",
+                "email": "rdiaztushman@dioscouri.com",
+                "homepage": "http://dioscouri.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "Library for the F3-framework",
+        "homepage": "https://github.com/dioscouri/f3-lib",
+        "keywords": [
+            "F3",
+            "rad"
+        ]
+    },
+    {
+        "name": "dioscouri/f3-mailer",
+        "version": "v0.9.0",
+        "version_normalized": "0.9.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dioscouri/f3-mailer.git",
+            "reference": "4b3a6108b6994a3331dcee351ac6e790e505c165"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dioscouri/f3-mailer/zipball/4b3a6108b6994a3331dcee351ac6e790e505c165",
+            "reference": "4b3a6108b6994a3331dcee351ac6e790e505c165",
+            "shasum": ""
+        },
+        "require": {
+            "dioscouri/f3-admin": ">=v0.8",
+            "dioscouri/f3-lib": ">=v0.8",
+            "mandrill/mandrill": ">=1.0.54",
+            "php": ">=5.4.0",
+            "phpmailer/phpmailer": ">=v5.2.7"
+        },
+        "time": "2015-08-31T17:28:28+00:00",
+        "type": "component",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Mailer": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL"
+        ],
+        "authors": [
+            {
+                "name": "Rafael Diaz-Tushman",
+                "email": "rdiaztushman@dioscouri.com",
+                "homepage": "http://dioscouri.com",
+                "role": "Developer"
+            },
+            {
+                "name": "Chris French",
+                "email": "chris@ammonitenetworks.com",
+                "homepage": "http://ammonitenetworks.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "A Mandrill Mailer App for F3-framework",
+        "homepage": "https://github.com/dioscouri/f3-mailer",
+        "keywords": [
+            "F3",
+            "email",
+            "mandrill",
+            "rad"
+        ]
+    },
+    {
+        "name": "dioscouri/f3-users",
+        "version": "v0.9.0",
+        "version_normalized": "0.9.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dioscouri/f3-users.git",
+            "reference": "2a2decfcb90d9e834fa23f27662c26c1b2fbec69"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dioscouri/f3-users/zipball/2a2decfcb90d9e834fa23f27662c26c1b2fbec69",
+            "reference": "2a2decfcb90d9e834fa23f27662c26c1b2fbec69",
+            "shasum": ""
+        },
+        "require": {
+            "dioscouri/f3-admin": ">=v0.8",
+            "dioscouri/f3-lib": ">=v0.8",
+            "php": ">=5.4.0"
+        },
+        "time": "2015-09-02T13:40:19+00:00",
+        "type": "component",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Users": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL"
+        ],
+        "authors": [
+            {
+                "name": "Rafael Diaz-Tushman",
+                "email": "rdiaztushman@dioscouri.com",
+                "homepage": "http://dioscouri.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "Simple User component for the F3-framework",
+        "homepage": "https://github.com/dioscouri/f3-users",
+        "keywords": [
+            "F3",
+            "User management",
+            "rad"
+        ]
+    },
+    {
+        "name": "mandrill/mandrill",
+        "version": "1.0.55",
+        "version_normalized": "1.0.55.0",
+        "source": {
+            "type": "git",
+            "url": "https://bitbucket.org/mailchimp/mandrill-api-php.git",
+            "reference": "da3adc10042eafac2e53de141b358a52b8e53596"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://bitbucket.org/mailchimp/mandrill-api-php/get/da3adc10042eafac2e53de141b358a52b8e53596.zip",
+            "reference": "da3adc10042eafac2e53de141b358a52b8e53596",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.0"
+        },
+        "time": "2015-09-22T13:58:03+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Mandrill": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Apache-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Mandrill Devs",
+                "email": "community@mandrill.com",
+                "homepage": "http://mandrill.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "API client library for the Mandrill email as a service platform",
+        "homepage": "https://bitbucket.org/mailchimp/mandrill-api-php",
+        "keywords": [
+            "api",
+            "email"
+        ]
+    },
+    {
+        "name": "phpmailer/phpmailer",
+        "version": "v6.0.7",
+        "version_normalized": "6.0.7.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/PHPMailer/PHPMailer.git",
+            "reference": "0c41a36d4508d470e376498c1c0c527aa36a2d59"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/0c41a36d4508d470e376498c1c0c527aa36a2d59",
+            "reference": "0c41a36d4508d470e376498c1c0c527aa36a2d59",
+            "shasum": ""
+        },
+        "require": {
+            "ext-ctype": "*",
+            "ext-filter": "*",
+            "php": ">=5.5.0"
+        },
+        "require-dev": {
+            "doctrine/annotations": "1.2.*",
+            "friendsofphp/php-cs-fixer": "^2.2",
+            "phpdocumentor/phpdocumentor": "2.*",
+            "phpunit/phpunit": "^4.8 || ^5.7",
+            "zendframework/zend-eventmanager": "3.0.*",
+            "zendframework/zend-i18n": "2.7.3",
+            "zendframework/zend-serializer": "2.7.*"
+        },
+        "suggest": {
+            "ext-mbstring": "Needed to send email in multibyte encoding charset",
+            "hayageek/oauth2-yahoo": "Needed for Yahoo XOAUTH2 authentication",
+            "league/oauth2-google": "Needed for Google XOAUTH2 authentication",
+            "psr/log": "For optional PSR-3 debug logging",
+            "stevenmaguire/oauth2-microsoft": "Needed for Microsoft XOAUTH2 authentication",
+            "symfony/polyfill-mbstring": "To support UTF-8 if the Mbstring PHP extension is not enabled (^1.2)"
+        },
+        "time": "2019-02-01T15:04:28+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PHPMailer\\PHPMailer\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL-2.1"
+        ],
+        "authors": [
+            {
+                "name": "Jim Jagielski",
+                "email": "jimjag@gmail.com"
+            },
+            {
+                "name": "Marcus Bointon",
+                "email": "phpmailer@synchromedia.co.uk"
+            },
+            {
+                "name": "Andy Prevost",
+                "email": "codeworxtech@users.sourceforge.net"
+            },
+            {
+                "name": "Brent R. Matzelle"
+            }
+        ],
+        "description": "PHPMailer is a full-featured email creation and transfer class for PHP"
+    }
+]

@@ -1,0 +1,34 @@
+{
+    "name": "dioscouri/f3-mailer",
+    "type": "component",
+    "description": "A Mandrill Mailer App for F3-framework",
+    "keywords": ["F3","RAD", "email", "mandrill"],
+    "homepage": "https://github.com/dioscouri/f3-mailer",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Chris French",
+            "email": "chris@ammonitenetworks.com",
+            "homepage": "http://ammonitenetworks.com",
+            "role": "Developer"
+        }, 
+        {
+            "name": "Rafael Diaz-Tushman",
+            "email": "rdiaztushman@dioscouri.com",
+            "homepage": "http://dioscouri.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "dioscouri/f3-lib": ">=v0.8",
+        "dioscouri/f3-admin": ">=v0.8",
+        "mandrill/mandrill": ">=1.0.54",
+        "phpmailer/phpmailer": ">=v5.2.7"
+    },
+    "autoload": {
+        "psr-0": {
+            "Mailer": "src/"
+        }
+    }    
+}
