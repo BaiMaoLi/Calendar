@@ -90,6 +90,7 @@ class CalendarController extends Controller {
         $duration=$this->f3->get('POST.duration');
         $start=$this->f3->get('POST.start');
         $result=$this->calendar->addSlot($idAPPOINTMENT, $duration, $start);
+        $this->sendEventEmail($result);
         echo $result;
     }
 
@@ -123,7 +124,7 @@ class CalendarController extends Controller {
 	    echo(json_encode($slots));
     }
 
-    public function sendEventEmail(){
+    public function sendEventEmail($idSlot){
         $host = "smtp.gmail.com";
         $port=465;
         $scheme="SSL";
@@ -131,9 +132,7 @@ class CalendarController extends Controller {
         $pw="PaekKumSong";
         $smtp = new SMTP( $host, $port, $scheme, $user, $pw );
 
-        $event=$this->calendar->getAppointment(94);
-
-
+        $event=$this->calendar->getAppointment($idSlot);
 
         for ($i=0;$i<count($event);$i++){
             $start_date=$event[$i]['START_DATE'];
@@ -142,17 +141,12 @@ class CalendarController extends Controller {
                 $event[$i]['END_DATE']=(new \DateTime($event[$i]['END_DATE']))->format('d M H:i');
             else{
                 $event[$i]['END_DATE']=(new \DateTime($start_date))->format('d M')." 23:59";
-
-
             }
-
         }
-
         $this->f3->set('event',$event);
-
         print_r($event);
-
-        $smtp->set('To', '<kds1991918@gmail.com>');
+//        $smtp->set('To', '<kds1991918@gmail.com>');
+        $smtp->set('To', "<$event[0][EMAIL]>");
         $smtp->set('Subject', 'Multipart test');
 
         $hash=uniqid(NULL,TRUE);
@@ -175,6 +169,19 @@ class CalendarController extends Controller {
         $smtp->send($body,true);
 
     }
+
+    public function acceptAppointment(){
+        $idAPPOINTMENT = $this->f3->get('PARAMS.idAPPOINTMENT');
+        $this->calendar->acceptAppointment($idAPPOINTMENT);
+    }
+
+    public function acceptSlot(){
+        $idSlot = $this->f3->get('PARAMS.idSlot');
+        $this->calendar->acceptSlot($idSlot);
+    }
+
+
+
 
 
 

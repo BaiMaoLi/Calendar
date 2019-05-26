@@ -49,9 +49,17 @@ class Calendar {
         $idAPPOINTMENT=$slot[0]['idAPPOINTMENT'];
         $slots=$this->db->exec("SELECT * FROM SLOT_APPOINTMENT LEFT JOIN APPOINTMENT ON APPOINTMENT.idAPPOINTMENT = SLOT_APPOINTMENT.idAPPOINTMENT WHERE SLOT_APPOINTMENT.idAPPOINTMENT = $idAPPOINTMENT");
         return $slots;
-
     }
 
+    public function acceptAppointment($idAPPOINTMENT){
+        $query="UPDATE APPOINTMENT SET isCONFIRMED = 1 WHERE idAPPOINTMENT=$idAPPOINTMENT";
+        $this->db->exec($query);
+    }
+
+    public function acceptSlot($idSlot){
+        $query="UPDATE SLOT_APPOINTMENT SET isCONFIRMED = 1 WHERE 	idSLOT_APPOINTMENT=$idSlot";
+        $this->db->exec($query);
+    }
 
     public function get_notScheduled()
     {

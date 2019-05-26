@@ -499,7 +499,7 @@
                                                 <p>Jamel Hillali (jamel.hillali@gmail.com) vous invite à participer au
                                                     sondage <strong>"<?= ($event[0]['TITLE']) ?>"</strong></p>
                                                 <?php foreach (($event?:[]) as $item): ?>
-                                                    <a href="#"
+                                                    <a href="https://dev.appt.1oyo1.com/accept/slot/<?= ($item['idSLOT_APPOINTMENT']) ?>"
                                                             style="-webkit-text-size-adjust: none; text-decoration: none; display: inline-block; color: #ffffff; background-color: #55acee; border-radius: 2px; -webkit-border-radius: 15px; -moz-border-radius: 15px; width: auto; width: auto; border-top: 1px solid #49a6e8; border-right: 1px solid #49a6e8; border-bottom: 1px solid #49a6e8; border-left: 1px solid #49a6e8; padding:2px 10px; font-family: 'Open Sans',
                                                                     Helvetica, Arial, sans-serif; text-align: center; mso-border-alt: none; word-break: keep-all;margin-bottom:5px;"
                                                             target="_blank">
@@ -530,13 +530,13 @@
                                                             <w:anchorlock/>
                                                             <v:textbox inset="0,0,0,0">
                                                                 <center style="color:#ffffff; font-family:Arial, sans-serif; font-size:14px">
-                                            <![endif]--><a href="#"
+                                            <![endif]--><a href="https://dev.appt.1oyo1.com/accept/appointment/<?= ($event[0]['idAPPOINTMENT']) ?>"
                                                            style="-webkit-text-size-adjust: none; text-decoration: none; display: inline-block; color: #ffffff; background-color: #55acee; border-radius: 24px; -webkit-border-radius: 24px; -moz-border-radius: 24px; width: auto; width: auto; border-top: 1px solid #49a6e8; border-right: 1px solid #49a6e8; border-bottom: 1px solid #49a6e8; border-left: 1px solid #49a6e8; padding-top: 5px; padding-bottom: 5px; font-family: 'Open Sans', Helvetica, Arial, sans-serif; text-align: center; mso-border-alt: none; word-break: keep-all;"
                                                            target="_blank"><span
                                                             style="padding-left:25px;padding-right:25px;font-size:14px;display:inline-block;"><span
                                                             style="font-size: 16px; line-height: 32px;"><span
                                                             data-mce-style="font-size: 14px;"
-                                                style="font-size: 14px; line-height: 28px;">Accept All Invitiation</span></span></span></a>
+                                                            style="font-size: 14px; line-height: 28px;">Accept All Invitiation</span></span></span></a>
                                             <!--[if mso]></center></v:textbox></v:roundrect></td></tr></table>
                                             <![endif]-->
                                         </div>

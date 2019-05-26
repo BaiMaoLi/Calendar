@@ -67,6 +67,7 @@ function updateEvent(){
         url:"update_slot",
         data:formData,
         success:function (result) {
+            console.log(result);
             $('#editEventForm .event-success-message').slideDown('slow');
             setTimeout(function () {
                 $('#editNewEvent').modal('hide');
