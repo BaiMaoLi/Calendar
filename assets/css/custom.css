@@ -1,0 +1,20 @@
+.validate-message{
+    color:#bd0c0c;
+    margin-top: 5px;
+    display: none;
+}
+.event-success-message,.event-danger-message{
+    margin-left: 24px;
+    margin-right: 25px;
+    display:none;
+}
+
+#editEventForm .event-success-message,#editEventForm .event-danger-message{
+    margin-left: 0;
+    margin-right: 0;
+    display:none;
+}
+
+.page-aside .list-group {
+    margin-bottom: 100px;
+}

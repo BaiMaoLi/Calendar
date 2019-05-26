@@ -13,9 +13,9 @@ $f3->config('routes.ini');
 
 $f3->route('GET /',
 	    function($f3) {
-		            $title = "dashboard";
-			            include_once("app/views/dashboard.php");
-			        }
+            $title = "dashboard";
+            echo \Template::instance()->render('dashboard.htm');
+        }
 );
 /*
 $f3->route('GET /calendar',
